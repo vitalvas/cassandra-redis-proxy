@@ -4,7 +4,7 @@ This is a simple proxy that allows you to use Cassandra as a cache for Redis.
 
 ## Cassandra
 
-Requires a cassandra version 3.0 or higher. Also tested with YugabyteDB with the cassandra compatibility layer.
+Requires a cassandra version 3.0 or higher.
 
 ### Schema
 

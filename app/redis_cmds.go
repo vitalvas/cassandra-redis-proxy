@@ -93,11 +93,7 @@ func redisCmdDel(app *App, conn redcon.Conn, args []string) error {
 		return errors.New("wrong number of arguments for 'del' command")
 	}
 
-	keys := make([]string, len(args)-1)
-
-	for i, key := range args[1:] {
-		keys[i] = string(key)
-	}
+	keys := args[1:]
 
 	if err := app.cassandraDel(keys...); err != nil {
 		return fmt.Errorf("cassandra query: %w", err)
@@ -157,10 +153,7 @@ func redisCmdExists(app *App, conn redcon.Conn, args []string) error {
 		return errors.New("wrong number of arguments for 'exists' command")
 	}
 
-	keys := make([]string, len(args)-1)
-	for i, key := range args[1:] {
-		keys[i] = string(key)
-	}
+	keys := args[1:]
 
 	count, err := app.cassandraExists(keys...)
 	if err != nil {
