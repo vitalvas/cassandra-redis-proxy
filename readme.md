@@ -1,6 +1,6 @@
 # Cassandra Redis Proxy
 
-This is a simple proxy that allows you to use Cassandra as a cache for Redis.
+This is a simple proxy that allows you to use Cassandra as a cache backend for Redis.
 
 ## Cassandra
 
