@@ -2,6 +2,16 @@
 
 This is a simple proxy that allows you to use Cassandra as a cache backend for Redis.
 
+## Configuration
+
+The configuration is done through environment variables:
+
+* `PROXY_LOG_LEVEL` (default: `info`): Log level. Possible values are `debug`, `info`, `warn`, `error`.
+* `PROXY_CASSANDRA_HOSTS` (default: `localhost`): Comma separated list of Cassandra hosts.
+* `PROXY_CASSANDRA_KEYSPACE` (default: `key_value_store`): Cassandra keyspace.
+* `PROXY_CASSANDRA_TABLE` (default: `key_value): Cassandra table.
+* `PROXY_REDIS_ADDRESS` (default: `:6380`): Redis listen address.
+
 ## Cassandra
 
 Requires a cassandra version 3.0 or higher.
