@@ -3,7 +3,7 @@ module github.com/vitalvas/cassandra-redis-proxy
 go 1.22
 
 require (
-	github.com/gocql/gocql v1.6.0
+	github.com/gocql/gocql v1.7.0
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/tidwall/redcon v1.6.2
 )
